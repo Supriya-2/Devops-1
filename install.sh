@@ -29,4 +29,5 @@ then
     yum install $i -y
   else
     echo "$i it is already there"
-
+fi
+done
