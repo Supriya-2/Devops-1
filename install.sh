@@ -4,13 +4,6 @@ USERID=$(id -u)
 LOGPATH=/home/centos/shell.lods
 DATE=$(date +%F)
 LOGFILE=$LOGPATH-$0/$DATE.log
-
-
-
-
-
-
-
 R="\e[31m"
 N="\e[0m"
 S="\e[31m"
@@ -27,8 +20,10 @@ VALI(){
     if [ $1 -ne 0 ];
     then
     echo -e "installing $2 ......$R fail $N"
+    exit 1
     else 
       echo -e "installing  $2 ......$S succes $N"
+      fi
 }
 
 for i in $@
@@ -37,7 +32,7 @@ do
    if [ $? -ne 0 ];
 then
     echo " $i is not they let's install now"
-    yum install $i -y
+    yum install $i -y &>>$LOGFILE
     VALI $? $i
   else
     echo -e " $Y $i it is already there $N"
