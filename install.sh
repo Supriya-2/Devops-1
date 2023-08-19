@@ -23,7 +23,7 @@ fi
 for i in $@
 do 
   yum list installed $i
-   if [$? -ne 0];
+   if [ $? -ne 0 ];
 then
     echo " $i is not they let's install now"
     yum install $i -y
