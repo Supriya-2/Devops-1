@@ -60,7 +60,7 @@ npm install &>>$LOGFILE
 VALIDATE $? "Installing dependencies"
 
 # give full path of catalogue.service because we are inside /app
-cp /devops working/daws-74s/reposcatalogue.service /etc/systemd/system/catalogue.service &>>$LOGFILE
+cp /devops working/daws-74s/repos/catalogue.service /etc/systemd/system/catalogue.service &>>$LOGFILE
 
 VALIDATE $? "copying catalogue.service"
 
