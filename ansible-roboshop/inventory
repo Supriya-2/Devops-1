@@ -1,8 +1,8 @@
 [mongodb]
-mongodb.joindevops.online
+mongodb.weldevops.online
 
 [catalogue]
-catalogue.joindevops.online
+catalogue.weldevops.online
 
 [web]
-web.joindevops.online
+web.weldevops.online
