@@ -3,9 +3,9 @@
 NAMES=$@
 INSTANCE_TYPE=""
 IMAGE_ID=ami-03265a0778a880afb
-SECURITY_GROUP_ID=sg-0b34d8689bd628e3f
-DOMAIN_NAME=joindevops.online
-HOSTED_ZONE_ID=Z0308214GYCUYHGJHT8R
+SECURITY_GROUP_ID=sg-0f46059a9248935c8
+DOMAIN_NAME=weldevops.online
+HOSTED_ZONE_ID=Z01752851IDSPPI935SIY
 
 # if mysql or mongodb instance_type should be t3.medium , for all others it is t2.micro
 
